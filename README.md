@@ -78,31 +78,31 @@ repositories {
 
 4. Then you should add to your dependencies all sdk dependencies. 
 If you are already using some of them then please check the versions and update depencencies if necessary.
-4.1. Support library
+i. Support library
 ```
 compile "com.android.support:appcompat-v7:${supportLibVersion}"
 ```
-4.2 Glide
+ii. Glide
 ```
 compile "com.github.bumptech.glide:glide:${glideVersion}"
 ```
-4.3 Exo player
+iii. Exo player
 ```
 compile "com.google.android.exoplayer:exoplayer:${exoPlayerVersion}"
 ```
-4.4 OkHttp
+iv. OkHttp
 ```
 compile "com.squareup.okhttp3:okhttp:${okHttpVersion}"
 compile "com.squareup.okhttp3:okhttp-urlconnection:${okHttpVersion}"
 compile "com.squareup.okhttp3:logging-interceptor:${okHttpVersion}"
 ```
-4.5 Retrofit 
+v. Retrofit 
 ```
 compile "com.squareup.retrofit2:retrofit:${retrofitVersion}"
 compile "com.squareup.retrofit2:converter-gson:${retrofitVersion}"
 compile "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:${retrofitRxAdapterVersion}"
 ```
-4.6 RxJava
+vi. RxJava
 ```
 compile "io.reactivex.rxjava2:rxjava:${rxJavaVersion}"
 compile "io.reactivex.rxjava2:rxandroid:${rxJavaVersion}"
@@ -117,7 +117,7 @@ android {
 	}
 }
 ```
-4.7 Firebase
+vii. Firebase
 ```
 compile "com.google.firebase:firebase-core:${playServiceVersion}"
 compile "com.google.firebase:firebase-database:${playServiceVersion}"
@@ -127,21 +127,21 @@ Note that firebase is a part of google services, so to use it you should add goo
 ```
 apply plugin: 'com.google.gms.google-services'
 ```
-4.8 Keen
+viii. Keen
 ```
 compile "io.keen:keen-client-api-android:${keenVersion}@aar"
 ```
-4.9 Twitter
+ix. Twitter
 ```
 compile "com.twitter.sdk.android:twitter:${twitterSdkVersion}"
 compile "com.twitter.sdk.android:twitter-core:${twitterSdkVersion}"
 ```
-4.10 IMA
+x. IMA
 ```
 compile "com.google.ads.interactivemedia.v3:interactivemedia:${imaAdsVersion}"
 compile "com.google.android.gms:play-services-ads:${playServiceVersion}"
 ```
-4.11 Multidex
+xi. Multidex
 ```
 compile "com.android.support:multidex:${multidexSupportVersion}"
 ```
@@ -203,18 +203,18 @@ PrometheanManager.get().init(this, PrometheanManager.PARTNER_QA);
 
 9. Then you should create instance of `IPTVPlayerController` using one of four methods:
 
-9.1 Use this method if you don't have your own player and want to use default player builded in promethean sdk
+i. Use this method if you don't have your own player and want to use default player builded in promethean sdk
 ```
 IPTVPlayerController createController(RelativeLayout containerView)
 ```
 
-9.2 Use this method if you have your own player and just want to show overlays on top of it.
+ii. Use this method if you have your own player and just want to show overlays on top of it.
 ```
 IPTVPlayerController createController(RelativeLayout containerView, String appType)
 ```
 appType - is your unique application type, provided by Promethean.
 
-9.3 Use this method if you don't have your own player, but you want to use your own controls view.
+iii. Use this method if you don't have your own player, but you want to use your own controls view.
 ```
 IPTVPlayerController createController(RelativeLayout containerView, BaseControlsView controlsView)
 ```
