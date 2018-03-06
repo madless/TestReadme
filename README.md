@@ -227,6 +227,7 @@ prepare(String uniqueExternalVideoId)
 uniqueExternalVideoId - unique video or channel id in your app, that can be used by Promethean to identify your content.
 
 11. If you have your own player you need to notify ptv player controller about your current player status you should call all these methods:
+
 `void onPlayerStarting()` - call this method when your player is starting or buffering
 `void onPlayerStarted()` - call this method when your player is started playing for the first time
 `void onPlayerResumed()` - call this method when your player is resumed from pausing
