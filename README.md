@@ -2,7 +2,7 @@
 
 [![Version](https://img.shields.io/badge/version-1.1-brightgreen.svg?style=flat)](https://github.com/PrometheanTV/sdk-android)
 [![Language](https://img.shields.io/badge/language-java-brightgreen.svg?style=flat)](https://github.com/PrometheanTV/sdk-android)
-[![Platform](https://img.shields.io/badge/platfor-android-brightgreen.svg?style=flat)](https://github.com/PrometheanTV/sdk-android)
+[![Platform](https://img.shields.io/badge/platform-android-brightgreen.svg?style=flat)](https://github.com/PrometheanTV/sdk-android)
 
 ## About
 
