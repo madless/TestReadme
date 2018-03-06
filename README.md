@@ -146,19 +146,19 @@ If you are already using some of them then please check the versions and update 
 	compile "com.android.support:multidex:${multidexSupportVersion}"
 	```
 
-5. Please make sure that you use these versions of the libraries:
-supportLibVersion - 25.3.1<br/>
-playServiceVersion - 11.0.4<br/>
-twitterSdkVersion - 3.1.1<br/>
-okHttpVersion - 3.4.1<br/>
-retrofitVersion - 2.3.0<br/>
-rxJavaVersion - 2.0.0<br/>
-keenVersion - 3.0.0<br/>
-imaAdsVersion - 3.6.0<br/>
-glideVersion - 3.7.0<br/>
-exoPlayerVersion - 2.7.0<br/>
-multidexSupportVersion - 1.0.1<br/>
-retrofitRxAdapterVersion - 1.0.0<br/>
+5. Please make sure that you use these versions of the libraries:<br/>
+	* supportLibVersion - 25.3.1<br/>
+	* playServiceVersion - 11.0.4<br/>
+	* twitterSdkVersion - 3.1.1<br/>
+	* okHttpVersion - 3.4.1<br/>
+	* retrofitVersion - 2.3.0<br/>
+	* rxJavaVersion - 2.0.0<br/>
+	* keenVersion - 3.0.0<br/>
+	* imaAdsVersion - 3.6.0<br/>
+	* glideVersion - 3.7.0<br/>
+	* exoPlayerVersion - 2.7.0<br/>
+	* multidexSupportVersion - 1.0.1<br/>
+	* retrofitRxAdapterVersion - 1.0.0<br/>
 
 6. Press `Sync` button in the top toolbar and wait for sdk to sync.
 
