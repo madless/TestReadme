@@ -1,5 +1,11 @@
 # Android PrometheanTVSDK
 
+[![Version](https://img.shields.io/badge/version-1.1-brightgreen.svg?style=flat)](https://github.com/PrometheanTV/sdk-android)
+[![Language](https://img.shields.io/badge/language-java-brightgreen.svg?style=flat)](https://github.com/PrometheanTV/sdk-android)
+[![Platform](https://img.shields.io/badge/platfor-android-brightgreen.svg?style=flat)](https://github.com/PrometheanTV/sdk-android)
+
+## About
+
 Promethean player SDK is used to play live and vod video content as well as render overlay content on top of the video.
 The SDK supports following players:
 - Exo player
