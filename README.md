@@ -174,8 +174,8 @@ public class MyApplication extends Application {
 }
 ```
 
-The example initializes sdk with default configuration, but if you want you can set server configuration by setting config key as the second parameter of the init() method. 
-Config key types: `PrometheanManager.QA, PrometheanManager.PARTNER_QA, PrometheanManager.PRODUCTION`
+The example initializes sdk with default configuration, but if you want you can set server configuration by setting config key as the second parameter of the init() method. <br/>
+Config key types: `PrometheanManager.QA, PrometheanManager.PARTNER_QA, PrometheanManager.PRODUCTION`<br/>
 Example:
 ```
 PrometheanManager.get().init(this, PrometheanManager.PARTNER_QA);
