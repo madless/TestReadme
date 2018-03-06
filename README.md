@@ -228,10 +228,10 @@ prepare(String uniqueExternalVideoId)
 uniqueExternalVideoId - unique video or channel id in your app, that can be used by Promethean to identify your content.
 
 11. If you have your own player you need to notify ptv player controller about your current player status you should call all these methods:<br/>
-`void onPlayerStarting()` - call this method when your player is starting or buffering<br/>
-`void onPlayerStarted()` - call this method when your player is started playing for the first time<br/>
-`void onPlayerResumed()` - call this method when your player is resumed from pausing<br/>
-`void onPlayerPaused()` - call this method when your player is paused<br/>
-`void onPlayingEnded()` - call this method when the video is over and your player finished playing<br/>
-`void onPlayerError()` - call this method when some error occurred during the playback<br/>
-`void setVideoStreamSize(width, height)` - call this method to set proper video stream size (size of PlayerView without black lines)<br/>
+	1. `void onPlayerStarting()` - call this method when your player is starting or buffering<br/>
+	2. `void onPlayerStarted()` - call this method when your player is started playing for the first time<br/>
+	3. `void onPlayerResumed()` - call this method when your player is resumed from pausing<br/>
+	4. `void onPlayerPaused()` - call this method when your player is paused<br/>
+	5. `void onPlayingEnded()` - call this method when the video is over and your player finished playing<br/>
+	6. `void onPlayerError()` - call this method when some error occurred during the playback<br/>
+	7. `void setVideoStreamSize(width, height)` - call this method to set proper video stream size (size of PlayerView without black lines)<br/>
