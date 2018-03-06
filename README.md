@@ -78,73 +78,73 @@ repositories {
 
 4. Then you should add to your dependencies all sdk dependencies. 
 If you are already using some of them then please check the versions and update depencencies if necessary.
-i. Support library
-```
-compile "com.android.support:appcompat-v7:${supportLibVersion}"
-```
-ii. Glide
-```
-compile "com.github.bumptech.glide:glide:${glideVersion}"
-```
-iii. Exo player
-```
-compile "com.google.android.exoplayer:exoplayer:${exoPlayerVersion}"
-```
-iv. OkHttp
-```
-compile "com.squareup.okhttp3:okhttp:${okHttpVersion}"
-compile "com.squareup.okhttp3:okhttp-urlconnection:${okHttpVersion}"
-compile "com.squareup.okhttp3:logging-interceptor:${okHttpVersion}"
-```
-v. Retrofit 
-```
-compile "com.squareup.retrofit2:retrofit:${retrofitVersion}"
-compile "com.squareup.retrofit2:converter-gson:${retrofitVersion}"
-compile "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:${retrofitRxAdapterVersion}"
-```
-vi. RxJava
-```
-compile "io.reactivex.rxjava2:rxjava:${rxJavaVersion}"
-compile "io.reactivex.rxjava2:rxandroid:${rxJavaVersion}"
-```
-To prevent possible bugs related to rxjava please add such lines to your `build.gradle` file:
-```
-android {
-	// your android settings
-	packagingOptions {
-		// your packaging options
-		exclude 'META-INF/rxjava.properties'
+	1. Support library
+	```
+	compile "com.android.support:appcompat-v7:${supportLibVersion}"
+	```
+	2. Glide
+	```
+	compile "com.github.bumptech.glide:glide:${glideVersion}"
+	```
+	3. Exo player
+	```
+	compile "com.google.android.exoplayer:exoplayer:${exoPlayerVersion}"
+	```
+	4. OkHttp
+	```
+	compile "com.squareup.okhttp3:okhttp:${okHttpVersion}"
+	compile "com.squareup.okhttp3:okhttp-urlconnection:${okHttpVersion}"
+	compile "com.squareup.okhttp3:logging-interceptor:${okHttpVersion}"
+	```
+	5. Retrofit 
+	```
+	compile "com.squareup.retrofit2:retrofit:${retrofitVersion}"
+	compile "com.squareup.retrofit2:converter-gson:${retrofitVersion}"
+	compile "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:${retrofitRxAdapterVersion}"
+	```
+	6. RxJava
+	```
+	compile "io.reactivex.rxjava2:rxjava:${rxJavaVersion}"
+	compile "io.reactivex.rxjava2:rxandroid:${rxJavaVersion}"
+	```
+	To prevent possible bugs related to rxjava please add such lines to your `build.gradle` file:
+	```
+	android {
+		// your android settings
+		packagingOptions {
+			// your packaging options
+			exclude 'META-INF/rxjava.properties'
+		}
 	}
-}
-```
-vii. Firebase
-```
-compile "com.google.firebase:firebase-core:${playServiceVersion}"
-compile "com.google.firebase:firebase-database:${playServiceVersion}"
-compile "com.google.firebase:firebase-messaging:${playServiceVersion}"
-```
-Note that firebase is a part of google services, so to use it you should add google services plugin after dependencies:
-```
-apply plugin: 'com.google.gms.google-services'
-```
-viii. Keen
-```
-compile "io.keen:keen-client-api-android:${keenVersion}@aar"
-```
-ix. Twitter
-```
-compile "com.twitter.sdk.android:twitter:${twitterSdkVersion}"
-compile "com.twitter.sdk.android:twitter-core:${twitterSdkVersion}"
-```
-x. IMA
-```
-compile "com.google.ads.interactivemedia.v3:interactivemedia:${imaAdsVersion}"
-compile "com.google.android.gms:play-services-ads:${playServiceVersion}"
-```
-xi. Multidex
-```
-compile "com.android.support:multidex:${multidexSupportVersion}"
-```
+	```
+	7. Firebase
+	```
+	compile "com.google.firebase:firebase-core:${playServiceVersion}"
+	compile "com.google.firebase:firebase-database:${playServiceVersion}"
+	compile "com.google.firebase:firebase-messaging:${playServiceVersion}"
+	```
+	Note that firebase is a part of google services, so to use it you should add google services plugin after dependencies:
+	```
+	apply plugin: 'com.google.gms.google-services'
+	```
+	8. Keen
+	```
+	compile "io.keen:keen-client-api-android:${keenVersion}@aar"
+	```
+	9. Twitter
+	```
+	compile "com.twitter.sdk.android:twitter:${twitterSdkVersion}"
+	compile "com.twitter.sdk.android:twitter-core:${twitterSdkVersion}"
+	```
+	10. IMA
+	```
+	compile "com.google.ads.interactivemedia.v3:interactivemedia:${imaAdsVersion}"
+	compile "com.google.android.gms:play-services-ads:${playServiceVersion}"
+	```
+	11. Multidex
+	```
+	compile "com.android.support:multidex:${multidexSupportVersion}"
+	```
 
 5. Please make sure that you use these versions of the libraries:
 supportLibVersion - 25.3.1
@@ -203,22 +203,22 @@ PrometheanManager.get().init(this, PrometheanManager.PARTNER_QA);
 
 9. Then you should create instance of `IPTVPlayerController` using one of four methods:
 
-i. Use this method if you don't have your own player and want to use default player builded in promethean sdk
-```
-IPTVPlayerController createController(RelativeLayout containerView)
-```
+	1. Use this method if you don't have your own player and want to use default player builded in promethean sdk
+	```
+	IPTVPlayerController createController(RelativeLayout containerView)
+	```
 
-ii. Use this method if you have your own player and just want to show overlays on top of it.
-```
-IPTVPlayerController createController(RelativeLayout containerView, String appType)
-```
-appType - is your unique application type, provided by Promethean.
+	2. Use this method if you have your own player and just want to show overlays on top of it.
+	```
+	IPTVPlayerController createController(RelativeLayout containerView, String appType)
+	```
+	appType - is your unique application type, provided by Promethean.
 
-iii. Use this method if you don't have your own player, but you want to use your own controls view.
-```
-IPTVPlayerController createController(RelativeLayout containerView, BaseControlsView controlsView)
-```
-controlsView - your custom controls view that should be extendes from BaseControlsView
+	3. Use this method if you don't have your own player, but you want to use your own controls view.
+	```
+	IPTVPlayerController createController(RelativeLayout containerView, BaseControlsView controlsView)
+	```
+	controlsView - your custom controls view that should be extendes from BaseControlsView
 
 10. To prepare controller you should call prepare controller method
 ```
