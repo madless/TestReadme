@@ -189,6 +189,7 @@ PrometheanManager.get().init(this, PrometheanManager.PARTNER_QA);
     android:layout_height="match_parent">
 
     <YourPlayerView
+		android:id="@+id/playerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -196,8 +197,8 @@ PrometheanManager.get().init(this, PrometheanManager.PARTNER_QA);
         android:id="@+id/containerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@id/brightcove_video_view"
-        android:layout_alignBottom="@id/brightcove_video_view" />
+        android:layout_alignTop="@id/playerView"
+        android:layout_alignBottom="@id/playerView" />
 </RelativeLayout>
 ```
 
@@ -226,12 +227,11 @@ prepare(String uniqueExternalVideoId)
 ```
 uniqueExternalVideoId - unique video or channel id in your app, that can be used by Promethean to identify your content.
 
-11. If you have your own player you need to notify ptv player controller about your current player status you should call all these methods:
-
-`void onPlayerStarting()` - call this method when your player is starting or buffering
-`void onPlayerStarted()` - call this method when your player is started playing for the first time
-`void onPlayerResumed()` - call this method when your player is resumed from pausing
-`void onPlayerPaused()` - call this method when your player is paused
-`void onPlayingEnded()` - call this method when the video is over and your player finished playing
-`void onPlayerError()` - call this method when some error occurred during the playback
-`void setVideoStreamSize(width, height)` - call this method to set proper video stream size (size of PlayerView without black lines)
+11. If you have your own player you need to notify ptv player controller about your current player status you should call all these methods:\n
+`void onPlayerStarting()` - call this method when your player is starting or buffering\n
+`void onPlayerStarted()` - call this method when your player is started playing for the first time\n
+`void onPlayerResumed()` - call this method when your player is resumed from pausing\n
+`void onPlayerPaused()` - call this method when your player is paused\n
+`void onPlayingEnded()` - call this method when the video is over and your player finished playing\n
+`void onPlayerError()` - call this method when some error occurred during the playback\n
+`void setVideoStreamSize(width, height)` - call this method to set proper video stream size (size of PlayerView without black lines)\n
